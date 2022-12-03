@@ -1,0 +1,33 @@
+{
+    "cache": "/var/staticstorage",
+    "port": "8080",
+    "insecure": true,
+    "handlers": [
+        {
+            "path": "/status/401",
+            "asset": "401cat"
+        },
+        {
+            "path": "/status/403",
+            "asset": "403cat"
+        },
+        {
+            "path": "/status/404",
+            "asset": "404cat"
+        }
+    ],
+    "externalAssets": [
+        {
+            "name": "401cat",
+            "url": "https://http.cat/401"
+        },
+        {
+            "name": "403cat",
+            "url": "https://http.cat/403"
+        },
+        {
+            "name": "404cat",
+            "url": "https://http.cat/404"
+        }
+    ]
+}
